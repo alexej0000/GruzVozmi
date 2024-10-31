@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('E:/Разработка WEB-представительств/Lab_4/fonts/Raleway/static/Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Raleway',sans-serif
+  }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 5px solid blue;
+}
+button{
+    height: 50px;
+    width: 100px;
+    border: 2px solid black;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+   
+}
+
+.map-container {
+    order: 1; /* Этот блок будет ниже */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+}
+
+.footer-content {
+    order: 2; /* Этот блок будет ниже */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.text {
+    line-height: 3;
+}
+img[alt]{
+    width: 400px;
+    height: 300px;
+
+}
+.text b{
+    background-color: aquamarine;
+}
+
+
+
+
+.button:hover{
+    color: brown;
+    text-transform: uppercase;
+    
+}
+p::first-letter{
+    color: black;
+}
+.TEXT{
+    text-align: center;
+}
+.centered-list{
+    text-align: center;
+    list-style-position: inside;
+}
