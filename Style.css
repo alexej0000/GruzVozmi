@@ -103,3 +103,28 @@ footer{
     
   text-align: center;
 }
+.Product{
+    border: 1px solid#33333333;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    width: calc(25% - 30px );
+    padding: 6px 12 px;
+    
+}
+.Product-image{
+    width: 280px;
+    display: flex;
+    align-items: center;
+
+}
+.Product-image img{
+    max-width: 100%;
+}
+.Catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
