@@ -38,6 +38,23 @@
 
 
     </header>
+    <aside class="filter-panel">
+        <h2>Фильтр</h2>
+        <form action="" method="get">
+            <label for="category">Категория:</label>
+            <select id="category" name="category">
+                <option value="all">Все</option>
+                <option value="miniescavator">Земляные работы</option>
+                <option value="manual_digging">Грузчики</option>
+                <option value="things_transport">Прочее</option>
+                <!-- Добавить остальные категории -->
+            </select>
+            <label for="price">Цена:</label>
+            <input type="number" id="price_min" name="price_min" placeholder="Минимум" min="0">
+            <input type="number" id="price_max" name="price_max" placeholder="Максимум" min="0">
+            <button type="submit" class="button">Применить</button>
+        </form>
+    </aside>
 
 
     <div class="Catalog">
@@ -110,7 +127,7 @@
         </div>
         <div class="Product">
             <div class="Product-image">
-                <a href="L"><img src="photo/Аренда инструмента.webp" alt="грузчики"></a>
+                <a href="Lease.html"><img src="photo/Аренда инструмента.webp" alt="грузчики"></a>
             </div>
             <div class="Product-name"> Аренда инструмента</div>
             <div class="Price">Цена: 700 руб/ день</div>
@@ -119,9 +136,21 @@
         </div>
 
         </section>
+        <form action="" method="get" class="pagination-form">
+            <button type="submit" name="page" value="previous" class="button">Предыдущая</button>
+            <label for="page">Страница:</label>
+            <select id="page" name="page">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <!-- Добавьте больше опций по мере необходимости -->
+            </select>
+            <button type="submit" name="page" value="next" class="button">Следующая</button>
+        </form>
 
-
-
+        
         <footer>
             <div class="map-container">
                 <!-- Яндекс Карты -->
