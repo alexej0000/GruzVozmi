@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('C:/Users/loban/Сайт гит/GruzVozmi/fonts/Raleway/static/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    margin: 5px;
+}
+
+header, footer {
+    background: linear-gradient(135deg, #e673dc 0%, #1088b1 100%); /* Градиентный фон */
+    color: #fff; /* Цвет текста */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    padding: 20px 0; /* Отступы */
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+    overflow: hidden; /* Обрезаем контент, выходящий за границы */
+    border-radius: 20px; /* Скругленные углы */
+}
+
+header {
+    margin-bottom: 50px; /* Отступ снизу для header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px; /* Скругленные углы */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+    border-radius: 20px; /* Скругленные углы */
+}
+
+header img#logo, footer img#footer-logo {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 5px solid #fff; /* Белая рамка вокруг логотипа */
+    border-radius: 50%; /* Закругленные углы для логотипа */
+}
+
+header button, footer button {
+    height: 70px;
+    width: 150px; /* Увеличенная ширина кнопки */
+    border: 2px solid white;
+    background-color: #0056b3; /* Твердый синий фон для улучшенной читаемости */
+    color: #fff;
+    font-size: 16px; /* Увеличенный размер шрифта */
+    font-weight: bold; /* Жирный шрифт для лучшей читаемости */
+    border-radius: 10px; /* Скругленные углы кнопки */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header button:hover, footer button:hover {
+    background-color: #003d80; /* Более темный цвет фона при наведении */
+    color: #fff; /* Белый цвет текста при наведении для контраста */
+}
+
+.map-container {
+    order: 1; /* Этот блок будет выше */
+    display: flex;
+    justify-content: center; /* Центрируем карту */
+    align-items: center;
+    width: calc(100% - 200px); /* Отступы для карты по 100px с каждой стороны */
+    margin: 20px auto; /* Отступы и авто центрирование */
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+}
+
+.footer-content {
+    order: 2; /* Этот блок будет ниже */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Добавляем отступы справа и слева */
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+
+footer .info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .info a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+footer .info div {
+    margin-top: 10px;
+}

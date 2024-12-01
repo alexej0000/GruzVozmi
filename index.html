@@ -5,24 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <title>
-        GruzVozmi
-    </title>
+    <link rel="stylesheet" href="Style/headerandfooter.css">
+    <link rel="stylesheet" href="Style/Index.css">
+    <title>GruzVozmi</title>
     <!-- WhatsApp -->
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
     <div class="elfsight-app-6a89b54d-90c8-4322-92c3-f2c8cf89681c" data-elfsight-app-lazy></div>
-
+    <link rel="icon" href="photo/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
     <header>
-
         <a href="index.html">
             <!-- Логотип -->
             <img src="photo/Логотип.png" id="logo" alt="Логотип">
-
         </a>
         <form action="">
             <button type="submit" class="button">Поиск</button>
@@ -32,73 +29,76 @@
         </form>
         <form action="Contacts.html">
             <button type="submit" class="button">Контакты</button>
-            <form action=""> </form>
+        </form>
+        <form action="">
             <button type="submit" class="button">Заказать обратный звонок</button>
         </form>
-
-
     </header>
 
-    <main class="TEXT">
-        <div class="text">
-            <h1>Почему именно мы?</h1>
-            <p><b>Профессионализм</b></p>
-            <p>Опытные и надёжные грузчики</p>
-            <p><b>Безопасность</b></p>
-            <p>Бережное отношение к вашему имуществу</p>
-            <p><b>Доступность</b></p>
-            <p>Конкурентные цены</p>
-            <p><b>Удобство</b></p>
-            <p>Работаем в удобное для вас время</p>
-
-
-
-            <ol class="centered-list">
-                <li>Профессионализм</li>
-
-                <li>Безопасность</li>
-
-                <li>Доступность</li>
-
-                <li>Удобство</li>
-            </ol>
-        </div>
-    </main>
-
-    <div class="ST">
-        <a href>
-            <img src="photo/Стропальщики.jpg"  alt="Стропальщики">
-        </a>
-    </div>
-        <footer>
-            <div class="map-container">
-                <!-- Яндекс Карты -->
-                <script type="text/javascript" charset="utf-8" async
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb271a03cfeddd0168aba64b0d6dbf500f2287a872e204b369f4ab5eb1db6fd1&amp;width=1400&amp;height=350&amp;lang=ru_RU&amp;scroll=true"
-                    i></script>
-            </div>
-
-            <div class="footer-content">
-                <a href="#">
-                    <img src="photo/Логотип.png" id="logo" alt="Логотип">
-                </a>
-                <form action="Services.html">
-                    <button type="submit" class="button">Услуги</button>
-                </form>
-                <form action="Contacts.html">
-                    <button type="submit" class="button">Контакты</button>
-                    <form action=""> </form>
-                <div class="info">
-                    <a href="mailto:lobanov.alexej1973@yandex.ru">lobanov.alexej1973@yandex.ru</a>
-                    <a href="tel:+79045918265">+79045918265</a>
-                    <div>Дизайн сайта: Лобанов Алексей Владимирович</div>
-                    <div>© 2022-2024</div>
+    <main>
+        <section class="why-us">
+            <h2>Почему именно мы?</h2>
+            <div class="info-block">
+                <div class="info-item">
+                    <h3>Профессионализм</h3>
+                    <p>Опытные и надёжные грузчики</p>
+                </div>
+                <div class="info-item">
+                    <h3>Безопасность</h3>
+                    <p>Бережное отношение к вашему имуществу</p>
+                </div>
+                <div class="info-item">
+                    <h3>Доступность</h3>
+                    <p>Конкурентные цены</p>
+                </div>
+                <div class="info-item">
+                    <h3>Удобство</h3>
+                    <p>Работаем в удобное для вас время</p>
                 </div>
             </div>
-        </footer>
+            <p class="more-info"> <a href="Services.html">Подробнее о наших услугах можно узнать здесь</a> </p>
 
+        </section>
 
+        <section class="details">
+            <h2>1. Профессионализм</h2>
+            <h2>2. Безопасность</h2>
+            <h2>3. Доступность</h2>
+            <h2>4. Удобство</h2>
+        </section>
 
+        <section class="photo-section">
+            <h2><img src="photo/Стропальщики.jpg" alt="Стропальщики"></h2>
+            <!-- Место для фото -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="map-container">
+            <!-- Яндекс Карты -->
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb271a03cfeddd0168aba64b0d6dbf500f2287a872e204b369f4ab5eb1db6fd1&amp;width=1400&amp;height=450&amp;lang=ru_RU&amp;scroll=true"
+                i></script>
+        </div>
+
+        <div class="footer-content">
+            <a href="index.html">
+                <img src="photo/Логотип.png" id="footer-logo" alt="Логотип">
+            </a>
+            <form action="Services.html">
+                <button type="submit" class="button">Услуги</button>
+            </form>
+            <form action="Contacts.html">
+                <button type="submit" class="button">Контакты</button>
+            </form>
+            <div class="info">
+                <a href="mailto:lobanov.alexej1973@yandex.ru">lobanov.alexej1973@yandex.ru</a>
+                <a href="tel:+79045918265">+79045918265</a>
+                <div>Дизайн сайта: Лобанов Алексей Владимирович</div>
+                <div>© 2022-2024</div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

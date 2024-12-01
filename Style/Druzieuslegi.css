@@ -1,0 +1,134 @@
+.Catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Равномерное распределение карточек по началу */
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.other-services-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em; /* Увеличенный размер шрифта */
+    color: #444; /* Более темный цвет для контраста */
+    margin-bottom: 30px; /* Увеличенный отступ снизу */
+    box-sizing: border-box;
+}
+
+.Catalog::after {
+    content: '';
+    flex: auto;
+}
+
+.Product {
+    flex: 0 1 calc(25% - 10px); /* Фиксированный размер карточек с равными отступами */
+    max-width: calc(25% - 10px); /* Максимальная ширина карточек */
+    border: 1px solid #e0e0e0; /* Светлый цвет рамки */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px; /* Увеличенные отступы внутри карточки */
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e3e3e3 100%); /* Градиентный фон */
+    border-radius: 12px; /* Больший радиус скругления углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Мягкая тень для карточек */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    word-wrap: break-word; /* для переноса длинного текста */
+}
+
+.Product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+}
+
+.Product-image {
+    width: 100%;
+    padding-top: 75%; /* Пропорция изображения 4:3 */
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.Product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполняем всю область изображения */
+}
+
+.Product-name {
+    margin-top: 15px; /* Увеличенный отступ сверху */
+    font-size: 1.5em; /* Увеличенный размер шрифта */
+    color: #333;
+    text-align: center;
+}
+
+.Price, .minimalka, .dostavka {
+    font-size: 1.1em; /* Немного увеличенный размер шрифта */
+    color: #666;
+    margin: 5px 0; /* Отступы между элементами */
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    
+    text-align: center;
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+a:hover .Product-name {
+    color: #007BFF; /* Цвет при наведении */
+}
+
+/* Адаптивные стили для различных размеров экрана */
+@media (max-width: 1600px) {
+    .Product {
+        flex: 0 1 calc(20% - 10px); /* пять карточек в строке при ширине экрана менее 1600px */
+        max-width: calc(20% - 10px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .Product {
+        flex: 0 1 calc(25% - 10px); /* четыре карточки в строке при ширине экрана менее 1400px */
+        max-width: calc(25% - 10px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .Product {
+        flex: 0 1 calc(30% - 10px); /* три карточки в строке при ширине экрана менее 1200px */
+        max-width: calc(30% - 10px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .Product {
+        flex: 0 1 calc(45% - 10px); /* две карточки в строке при ширине экрана менее 1000px */
+        max-width: calc(45% - 10px);
+    }
+}
+
+@media (max-width: 800px) {
+    .Product {
+        flex: 0 1 calc(50% - 10px); /* две карточки в строке при ширине экрана менее 800px */
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .Product {
+        flex: 0 1 100%; /* одна карточка в строке при ширине экрана менее 600px */
+        max-width: 100%;
+    }
+}

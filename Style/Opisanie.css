@@ -1,0 +1,40 @@
+main.Opisanie {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+}
+
+.excavator-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.service-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.service-list li {
+    margin-bottom: 10px;
+}
+
+.service-list li strong {
+    color: #007BFF;
+}

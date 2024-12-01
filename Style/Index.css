@@ -1,0 +1,63 @@
+/* Стили для секции "Почему именно мы?" */
+.why-us {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.why-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.info-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info-item {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.info-item h3 {
+    font-size: 1.8em;
+    color: #1088b1;
+}
+
+.info-item p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.more-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #007BFF;
+}
+
+.details {
+    text-align: center;
+    padding: 20px;
+}
+
+.details h2 {
+    font-size: 1.8em;
+    color: #1088b1;
+    margin-bottom: 10px;
+}
+
+.photo-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.photo-section h2 {
+    font-size: 2em;
+    color: #1088b1;
+    margin-bottom: 20px;
+}
