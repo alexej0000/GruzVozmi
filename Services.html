@@ -8,17 +8,25 @@
     <link rel="stylesheet" href="Style/headerandfooter.css">
     <link rel="stylesheet" href="Style/Druzieuslegi.css">
     <link rel="stylesheet" href="Style/Opisanie.css">
+    <link rel="stylesheet" href="Style/filter.css">
+    <link rel="stylesheet" href="Style/paginahia.css">
     <title>
         GruzVozmi
     </title>
     <!-- WhatsApp -->
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
     <div class="elfsight-app-6a89b54d-90c8-4322-92c3-f2c8cf89681c" data-elfsight-app-lazy></div>
+    
+    
+    
 
 </head>
 
 <body>
-
+   
+    
+    
+    
     <header>
         <a href="index.html">
             <!-- Логотип -->
@@ -33,10 +41,20 @@
         <form action="Contacts.html">
             <button type="submit" class="button">Контакты</button>
         </form>
-        <form action="">
+        <form action="Call.html" >
             <button type="submit" class="button">Заказать обратный звонок</button>
         </form>
     </header>
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+        
     <aside class="filter-panel">
         <h2>Фильтр</h2>
         <form action="" method="get">
@@ -46,7 +64,6 @@
                 <option value="miniescavator">Земляные работы</option>
                 <option value="manual_digging">Грузчики</option>
                 <option value="things_transport">Прочее</option>
-                <!-- Добавить остальные категории -->
             </select>
             <label for="price">Цена:</label>
             <input type="number" id="price_min" name="price_min" placeholder="Минимум" min="0">
@@ -54,6 +71,7 @@
             <button type="submit" class="button">Применить</button>
         </form>
     </aside>
+    
 
 
     <section class="Catalog">
@@ -101,7 +119,7 @@
                 <div class="Product-name"> Услуги погрузки/разгрузки складских товаров</div>
                 <div class="Price">Цена: 600 руб/час</div>
                 <div class="minimalka">Минимальная оплата: 1200 руб</div>
-                <div class="dostavка">Доставка: от 0 руб</div>
+                <div class="dostavka">Доставка: от 0 руб</div>
             </a>
         </div>
         <div class="Product">
@@ -149,8 +167,8 @@
             </a>
         </div>
     </section>
-        <form action="" method="get" class="pagination-form">
-            <button type="submit" name="page" value="previous" class="button">Предыдущая</button>
+    <form action="" method="get" class="pagination-form">
+        <div class="top-row">
             <label for="page">Страница:</label>
             <select id="page" name="page">
                 <option value="1">1</option>
@@ -158,10 +176,19 @@
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
-                <!-- Добавьте больше опций по мере необходимости -->
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
             </select>
+            <button type="submit" class="button apply-button">Применить</button>
+        </div>
+        <div class="bottom-row">
+            <button type="submit" name="page" value="previous" class="button">Предыдущая</button>
             <button type="submit" name="page" value="next" class="button">Следующая</button>
-        </form>
+        </div>
+    </form>
+    
+    
 
 
         <footer>
