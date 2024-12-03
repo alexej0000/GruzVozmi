@@ -31,6 +31,7 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -61,7 +62,10 @@ header button, footer button {
     font-size: 16px;
     font-weight: bold;
     border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, height 0.3s ease, width 0.3s ease;
+    word-wrap: break-word;
+    white-space: normal;
+    margin: 5px;
 }
 
 header button:hover, footer button:hover {
@@ -121,4 +125,88 @@ footer .info div {
     margin-top: 10px;
 }
 
+/* Медиазапросы */
+@media (max-width: 1600px) {
+    header button, footer button {
+        height: 80px;
+        width: 160px;
+        font-size: 15px;
+    }
 
+    header img#logo, footer img#footer-logo {
+        height: 90px;
+        width: 90px;
+    }
+
+    .map-container {
+        width: calc(100% - 150px);
+    }
+}
+
+@media (max-width: 1200px) {
+    header button, footer button {
+        height: 90px;
+        width: 180px;
+        font-size: 14px;
+    }
+
+    header img#logo, footer img#footer-logo {
+        height: 80px;
+        width: 80px;
+    }
+
+    .map-container {
+        width: calc(100% - 100px);
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header button, footer button {
+        height: 100px;
+        width: 200px;
+        font-size: 13px;
+    }
+
+    header img#logo, footer img#footer-logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .map-container {
+        width: calc(100% - 50px);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    header button, footer button {
+        height: 110px;
+        width: 220px;
+        font-size: 12px;
+    }
+
+    header img#logo, footer img#footer-logo {
+        height: 60px;
+        width: 60px;
+    }
+}
