@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Style/headerandfooter.css">
     <link rel="stylesheet" href="Style/Opisanie.css">
     <link rel="stylesheet" href="Style/Druzieuslegi.css">
+    <link rel="stylesheet" href="Style/paginahia.css">
     <title>
         GruzVozmi
     </title>
@@ -146,6 +147,26 @@
             </a>
         </div>
     </section>
+    <form action="" method="get" class="pagination-form">
+        <div class="top-row">
+            <label for="page">Страница:</label>
+            <select id="page" name="page">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <button type="submit" class="button apply-button">Применить</button>
+        </div>
+        <div class="bottom-row">
+            <button type="submit" name="page" value="previous" class="button">Предыдущая</button>
+            <button type="submit" name="page" value="next" class="button">Следующая</button>
+        </div>
+    </form>
     <footer>
         <div class="map-container">
             <!-- Яндекс Карты -->

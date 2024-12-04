@@ -1,12 +1,7 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('C:/Users/loban/Сайт гит/GruzVozmi/fonts/Raleway/static/Raleway-SemiBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 body {
-    font-family: 'Raleway', sans-serif;
+
     display: block;
     margin: 5px;
 }
@@ -16,7 +11,7 @@ header, footer {
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
-    font-family: 'Raleway', sans-serif;
+    
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
