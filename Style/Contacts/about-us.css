@@ -71,3 +71,68 @@
         margin-right: 20px;
     }
 }
+
+/* Основные стили для секции "Контакты" */
+.contacts {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Центрирование текста */
+}
+
+.contacts h2 {
+    font-size: 1.5em;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.contacts ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding-left: 0;
+    text-align: left; /* Выровнять текст списка влево */
+}
+
+.contacts ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.contacts a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 1200px) {
+    .contacts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacts {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
